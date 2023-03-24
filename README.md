@@ -59,7 +59,7 @@ Verificamos qual a correlação entre os valores do dataset, primeiro no modelo 
 [![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr1.PNG?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr1.PNG?raw=true)
 
 Depois utilzamos a lib YellowBrick para exibir de forma mais sofisticada essa correlação.
-[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/yellow1.png?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/yellow1.png?raw=true)
+[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.png?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.png?raw=true)
 
 ###### Podemos perceber que rooms, bathroom e parking spaces tem a maior correlação.
 
