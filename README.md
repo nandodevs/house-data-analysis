@@ -26,7 +26,8 @@ pip install -r requirements.txt
 O dataset utilizado neste projeto foi obtido no Kaggle. Trata-se de um conjunto de dados com informações sobre imóveis em São Paulo, Rio de Janeiro, BH, Porto Alegre e Campinas, incluindo diversas características como número de quartos, banheiros, tamanho do lote, localização, dentre outros.
 
 ###### Head do dataset
-[![head](imgs\img1.PNG "head")](\imgs\img1.PNG "head")
+
+[![Head](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/img1.PNG?raw=true "Head")](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/img1.PNG?raw=true "Head")
 
 ### Análise Exploratória dos Dados
 Nesse processo iremos fazer a limpeza dos dados, removendo colunas e valores desnecessários que possam interferir na modelagem dos dados.
@@ -45,19 +46,40 @@ base_dados.head()
 
 ```
 O resultado fica assim:
-[![head](imgs\eda1.PNG "eda")](\imgs\eda1.PNG "eda")
+[![eda](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/eda1.PNG?raw=true "eda")](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/eda1.PNG?raw=true "eda")
 
 ### Modelagem
 O modelo de machine learning utilizado foi o RandomForestRegression, um algoritmo de aprendizado de máquina que cria múltiplas árvores de decisão e as combina para obter uma melhor precisão. O modelo foi treinado com o conjunto de dados de treinamento e, em seguida, avaliado com o conjunto de dados de teste para verificar sua precisão.
 
+OBS: O modelo foi filtrado pela cidade de São Paulo, sendo ela utilizada como base para todo o processo.
 
+###### Checando a correlação
+Verificamos qual a correlação entre os valores do dataset, primeiro no modelo mais simples:
+
+[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr1.PNG?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr1.PNG?raw=true)
+
+Depois utilzamos a lib YellowBrick para exibir de forma mais sofisticada essa correlação.
+[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/yellow1.png?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/yellow1.png?raw=true)
+
+###### Podemos perceber que rooms, bathroom e parking spaces tem a maior correlação.
+
+Utilizamos também o YellowBrick para avaliar a performance do modelo e seu nível de erro durante a análise de dados.
+
+[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.PNG?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.PNG?raw=true)
+
+### Desenvolvimento de API
+Foi utilizado a biblioteca Flask para criar uma API para consulta do resultado do modelo obtido através dos testes.
+
+Por meio dessa API, fica mais simples a consulta das informações e tornar mais viável sua utilização para um público diversificado.
+
+Além disso, as informações foram salvas em banco SQL, para agilizar e ter controle de acessos a API.
+
+Aqui temos o resultado do retorno da consulta ao banco de dados, mostrando o valor a ser cobrado pelo aluguel, a data e hora da consulta (início e fim) e o tempo gasto na consulta.
+
+[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/api1.PNG?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/api1.PNG?raw=true)
 
 ### Resultados
 O modelo treinado obteve uma informações fundamentais para serem utilizadas como modelo para ser aplicado para outros estados, sendo capaz de prever com certa confiabilidade o preço de venda de um imóvel com base em suas características.
 
 ### Conclusão
 A técnica de RandomForestRegression pode ser utilizada com sucesso em análises de preços de imóveis, oferecendo resultados precisos e confiáveis. Este projeto pode ser utilizado como base para futuras análises e estudos na área.
-
-
-
-
