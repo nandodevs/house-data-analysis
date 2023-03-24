@@ -65,7 +65,7 @@ Depois utilzamos a lib YellowBrick para exibir de forma mais sofisticada essa co
 
 Utilizamos também o YellowBrick para avaliar a performance do modelo e seu nível de erro durante a análise de dados.
 
-[![](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.PNG?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.PNG?raw=true)
+[![]https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.png?raw=true)](https://github.com/nandodevs/house-data-analysis/blob/master/imgs/corr2.png?raw=true)
 
 ### Desenvolvimento de API
 Foi utilizado a biblioteca Flask para criar uma API para consulta do resultado do modelo obtido através dos testes.
