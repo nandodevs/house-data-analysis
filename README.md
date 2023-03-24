@@ -1,4 +1,4 @@
-# Análise de Preços de Imóveis Utilizando RandomForestRegression
+# Análise de Preços de Imóveis
 
 Este projeto tem como objetivo demonstrar o uso da técnica de RandomForestRegression para análise de preços de imóveis. Através de um modelo de machine learning, podemos analisar diversas variáveis de imóveis e prever com maior precisão o preço de venda.
 
