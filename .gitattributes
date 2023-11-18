@@ -1,0 +1,4 @@
+# .gitattributes
+*.ipynb linguist-language=Python
+*.py linguist-language=Python
+*.db linguist-language=SQL
